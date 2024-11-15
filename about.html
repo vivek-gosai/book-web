@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- mobile-list-modal -->
+    <div class="offcanvas offcanvas-start border-3 border-warning" data-bs-scroll="true" tabindex="-1" id="mobile-list" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <div class="logo d-flex border-bottom py-4 border-3 border-warning">
+              <a class="navbar-brand fs-3 fw-semibold text-black d-flex align-items-center" href="#"><img src="images/brand/Logo.png" alt="logo" class="img-fluid pe-2">Pages</a>
+              <div class="navbar-icon d-flex ms-4">
+                <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 text-white rounded-3 bg-primary"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 text-white rounded-3 bg-primary"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 text-white bg-primar text-white bg-primary rounded-3"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="--bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(255, 202, 66, 0.9)"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mobile-nav">
+                <ul class="d-flex m-0 list-unstyled flex-column">
+                    <li class="nav-item py-2 mb-2"><a href="index.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Home</a></li>
+                    <li class="nav-item py-2 mb-2 dropdown"><a href="#" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" data-bs-toggle="dropdown" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Pages <i class="fa-solid fa-angle-down ps-1"></i></a>
+                        <ul class="dropdown-menu border-warning border-2">
+                            <li class="nav-item py-1 px-3 mb-1"><a href="store.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Store</a></li>
+                            <li class="nav-item py-1 px-3 mb-1"><a href="single-Product.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Single-Product</a></li>
+                            <li class="nav-item py-1 px-3 mb-1"><a href="blog-Single.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Blog-Single</a></li>
+                            <li class="nav-item py-1 px-3 mb-1"><a href="password-protected.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Password-Protected</a></li>
+                            <li class="nav-item py-1 px-3 mb-1"><a href="licenses.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Licenses</a></li>
+                            <li class="nav-item py-1 px-3 mb-1"><a href="changelog.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Changelog</a></li>
+                            <li class="nav-item py-1 px-3 mb-1"><a href="404.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">404</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item py-2 mb-2"><a href="about.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">About</a></li>
+                    <li class="nav-item py-2 mb-2"><a href="service.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Services</a></li>
+                    <li class="nav-item py-2 mb-2"><a href="contact.html" class="text-decoration-none fw-semibold pe-2 d-inline-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000000; transition: all 0.4s')">Contact</a></li>
+                </ul>
+                <div class="navbar-btn d-flex align-items-center mt-3">
+                    <a href="#" class="d-inline-block py-2 me-5">
+                        <div class=" position-relative">
+                            <i class="fa-solid fa-cart-shopping text-black fs-3"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning py-2">01</span>
+                        </div>
+                    </a>
+                    <a href="#" class="btn btn-warning fs-6 fw-semibold">Order Today</a>
+                </div>
+              </div>
+        </div>
+    </div>
+<!-- end-mobile-list-modal -->
+
+<!-- header -->
+    <header class="bg-primary py-2 fexed-top">
+        <nav class="navbar navbar-expand-lg d-flex align-items-center">
+            <div class="container">
+            <div class="logo">
+                <a class="navbar-brand fs-3 fw-semibold text-white d-flex align-items-center" href="#"><img src="images/brand/Logo.png" alt="logo" class="img-fluid pe-2">Pages</a>
+            </div>
+              <div class="button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobile-list" style="cursor: pointer;">
+                    <i class="fa-solid fa-bars fs-2 text-white"></i>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-icon d-flex">
+                    <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 bg-primary text-primary rounded-3 bg-white"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 bg-primary text-primary rounded-3 bg-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2  bg-primary text-primary rounded-3 bg-white"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-3"><a href="index.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: white;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #ffffff; transition: all 0.4s')">Home</a></li>
+                    <li class="nav-item pe-3 dropdown"><a href="javascript:void(0)" data-bs-toggle="dropdown" class="text-decoration-none fw-semibold pe-2 d-inline-block fs-5" style="color: white;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #ffffff; transition: all 0.4s')">Pages <i class="fa-solid fa-angle-down ps-1"></i></a>
+                        <ul class="dropdown-menu border-2 border-warning shadow" style="--bs-dropdown-min-width: 13.3rem; top: 160%;">
+                            <li class="nav-item ps-3"><a href="store.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">Store</a></li>
+                            <li class="nav-item ps-3"><a href="single-product.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">Single-Product</a></li>
+                            <li class="nav-item ps-3"><a href="blog-single.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">Blog-Single</a></li>
+                            <li class="nav-item ps-3"><a href="pssword-protected.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">Password-Protected</a></li>
+                            <li class="nav-item ps-3"><a href="licenses.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">Licenses</a></li>
+                            <li class="nav-item ps-3"><a href="changlog.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">Changelog</a></li>
+                            <li class="nav-item ps-3"><a href="404.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: black;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #000; transition: all 0.4s')">404</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item pe-3"><a href="about.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: white;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #ffffff; transition: all 0.4s')">About</a></li>
+                    <li class="nav-item pe-3"><a href="service.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: white;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #ffffff; transition: all 0.4s')">Services</a></li>
+                    <li class="nav-item pe-3"><a href="contact.html" class="text-decoration-none fw-semibold pe-2 d-flex align-items-center fs-5" style="color: white;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #ffffff; transition: all 0.4s')">Contact</a></li>
+                    <li>
+                    <a href="javascript:void(0)">
+                        <div type="button" class=" position-relative">
+                            <i class="fa-solid fa-cart-shopping text-white fs-3"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning py-2">01</span>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+                <div class="navbar-btn ms-4">
+                    <a href="#" class="btn btn-warning fs-6 fw-semibold">Order Today</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+<!-- end-header -->
+<!-- main -->
+    <!-- banner -->
+    <section class="banner w-100 bg-primary d-flex align-items-center justify-content-center" style="height: 500px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-6 text-center">
+                        <h1 class="text-white">About the Author</h1>
+                        <img src="images/line/Line.png" alt="line" class="img-fluid mb-2 rounded-3" style="width: 5%;">
+                        <p class="text-secondary dis fs-5">There are many variations of passages of Lorem Ipsum available,  have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-banner -->
+    <!-- about -->
+    <section class="py bg-info">
+        <div class="container">
+            <div class="row align-items-center row-gap-5">
+                <div class="col-12">
+                    <div class="about-img shadow">
+                        <img src="images/about-img/about-img.png" alt="about-img" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row pe-0 row-gap-4 align-items-center">
+                    <div class="col-lg-4 pe-0">
+                        <div class="about-dis bg-white border p-4 border-2 border-primary-subtle d-flex align-items-center justify-content-between">
+                            <div class="col-6">
+                                <div class="part-1">
+                                    <ul class="m-0 list-unstyled">
+                                        <li class="text-primary dis py-1">Country :</li>
+                                        <li class="text-primary dis py-1">Language :</li>
+                                        <li class="text-primary dis py-1">Genre :</li>
+                                        <li class="text-primary dis py-1">Publication date :</li>
+                                        <li class="text-primary dis py-1">Share us on:</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="part-2">
+                                    <ul class="m-0 list-unstyled">
+                                        <li class="py-1"><a href="#" class="text-decoration-none text-info-emphasis d-inline-block">United Kingdom</a></li>
+                                        <li class="py-1"><a href="#" class="text-decoration-none text-info-emphasis d-inline-block">English</a></li>
+                                        <li class="py-1"><a href="#" class="text-decoration-none text-info-emphasis d-inline-block">Historiography</a></li>
+                                        <li class="py-1"><a href="#" class="text-decoration-none text-info-emphasis d-inline-block">1991</a></li>
+                                        <li class="py-1"><a href="#" class="text-decoration-none text-primary fs-6 d-inline-block"><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 order-first order-lg-last">
+                        <div class="dis-part-2 ps-3">
+                            <h2 class="text-primary m-0">About Dr. John Abraham </h2>
+                            <img src="images/line/Line.png" alt="line" style="width: 8%;" class="rounded-3">
+                            <p class="dis text-info-emphasis">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, that can combined with a handful of model sentence structures.</p>
+                            <a href="#" class="btn btn-warning dis">Contact now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+    <!-- my story -->
+    <section class="my-story py">
+        <div class="container">
+            <div class="row row-gap-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="my-story-dis">
+                        <h2 class="text-primary m-0">My Story</h2>
+                        <img src="images/line/Line.png" alt="line" style="width: 8%;" class="rounded-3">
+                        <p class="dis text-info-emphasis fs-5 m-0 mt-2">Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>
+                        <ul class="m-0 ps-4 list-unstyled mt-4">
+                            <li class="d-flex mb-2 position-relative">
+                                <div class="number pe-4">
+                                    <p class="dis p-3 fw-bolder bg-warning">01</p>
+                                </div>
+                                <div class="dis">
+                                    <h3 class="text-primary">Great Author Awards - 1996 & 2000</h3>
+                                    <p class="dis text-info-emphasis fs-5">How to navigate around the interface and toggle on/off the panels you wish to use.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-2 position-relative">
+                                <div class="number pe-4">
+                                    <p class="dis p-3 fw-bolder bg-warning">02</p>
+                                </div>
+                                <div class="dis">
+                                    <h3 class="text-primary">10 Times New York Times ® Best Seller</h3>
+                                    <p class="dis text-info-emphasis fs-5">How to navigate around the interface and toggle on/off the panels you wish to use.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-2 position-relative">
+                                <div class="number pe-4">
+                                    <p class="dis p-3 fw-bolder bg-warning">03</p>
+                                </div>
+                                <div class="dis">
+                                    <h3 class="text-primary">Writer of Hack Productivity</h3>
+                                    <p class="dis text-info-emphasis fs-5">How to navigate around the interface and toggle on/off the panels you wish to use.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-first order-lg-last">
+                    <div class="my-story-img shadow">
+                        <img src="images/about-img/my-story-img.png" alt="my-story-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end story -->
+    <!-- Book Includes -->
+    <section class="Book Includes py bg-info">
+        <div class="container">
+            <div class="row row-gap-4">
+                <div class="text-center">
+                    <h2 class="text-primary text-center">Author’s Book Includes</h2>
+                    <img src="images/line/Line.png" alt="line" class="img-fluid text-center d-inline-block rounded-3" style="width: 9%;">
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="book-card-1" onpointerenter="this.setAttribute('style', 'box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'box-shadow: none; transition: all 0.4s')">
+                        <img src="images/book-img/img-1.png" alt="book-img-1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 d-flex align-items-center justify-content-center">
+                    <div class="book-part-2">
+                        <div class="book-dis mb-4">
+                            <h2 class="text-primary mb-3">Atomic One’s</h2>
+                            <p class="dis text-info-emphasis">Many variations of passages of Lorem Ipsum willing araise  alteration in some form.</p>
+                        </div>
+                        <div class="book-list mb-4">
+                            <ul class="m-0 list-unstyled d-flex justify-content-between">
+                                <li class="me-3">
+                                    <div class="pages d-flex">
+                                        <div class="img pe-3">
+                                            <i class="fa-solid fa-circle text-warning"></i>
+                                        </div>
+                                        <div class="pages-heading-dis">
+                                            <h3 class="text-primary m-0">Pages:</h3>
+                                            <p class="text-info-emphasis fs-5">586pages</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="me-3">
+                                    <div class="pages d-flex">
+                                        <div class="img pe-3">
+                                            <i class="fa-solid fa-circle text-warning"></i>
+                                        </div>
+                                        <div class="pages-heading-dis">
+                                            <h3 class="text-primary m-0">Length:</h3>
+                                            <p class="text-info-emphasis fs-5">10 Hours</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="book-btn">
+                            <a href="#" class="btn btn-outline-warning text-primary fs-5 fw-semibold py-2 px-3 me-3">Order Today</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="book-card-2" onpointerenter="this.setAttribute('style', 'box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'box-shadow: none; transition: all 0.4s')">
+                        <img src="images/book-img/img-2.png" alt="book-img-2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 d-flex align-items-center justify-content-center">
+                    <div class="book-part-2">
+                        <div class="book-dis mb-4">
+                            <h2 class="text-primary mb-3">The Dark Light</h2>
+                            <p class="dis text-info-emphasis">Many variations of passages of Lorem Ipsum willing araise  alteration in some form.</p>
+                        </div>
+                        <div class="book-list mb-4">
+                            <ul class="m-0 list-unstyled d-flex justify-content-between">
+                                <li class="me-3">
+                                    <div class="pages d-flex">
+                                        <div class="img pe-3">
+                                            <i class="fa-solid fa-circle text-warning"></i>
+                                        </div>
+                                        <div class="pages-heading-dis">
+                                            <h3 class="text-primary m-0">Pages:</h3>
+                                            <p class="text-info-emphasis fs-5">586pages</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="me-3">
+                                    <div class="pages d-flex">
+                                        <div class="img pe-3">
+                                            <i class="fa-solid fa-circle text-warning"></i>
+                                        </div>
+                                        <div class="pages-heading-dis">
+                                            <h3 class="text-primary m-0">Length:</h3>
+                                            <p class="text-info-emphasis fs-5">10 Hours</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="book-btn">
+                            <a href="#" class="btn btn-outline-warning text-primary fs-5 fw-semibold py-2 px-3 me-3">Order Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Book Includes -->
+    <!-- trusted -->
+    <section class="trusted py">
+        <div class="container">
+            <div class="row row-gap-4 align-items-cente">
+                <div class="text-center">
+                    <h2 class="text-primary text-center">Trusted by the Best</h2>
+                    <img src="images/line/Line.png" alt="line" class="img-fluid text-center d-inline-block rounded-3" style="width: 9%;">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="amazen bg-white text-center border border-2 border-warning rounded-3 px-3 py-3 d-flex align-items-center flex-column justify-content-evenly" style="height: 100%;">
+                        <img src="images/trusted-img/img-1.png" alt="amazen-img-1" class="img-fluid mb-2 col-6">
+                        <div class="amazen-dis">
+                            <h3 class="text-primary">Amazen Corp</h3>
+                            <p class="dis text-info-emphasis fs-5">A long established fact that a who looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="amazen bg-white text-center border border-2 border-warning rounded-3 py-3 px-3 d-flex align-items-center flex-column justify-content-around" style="height: 100%;">
+                        <img src="images/trusted-img/img-2.png" alt="amazen-img-1" class="img-fluid mb-2">
+                        <div class="amazen-dis">
+                            <h3 class="text-primary">Megan Books</h3>
+                            <p class="dis text-info-emphasis fs-5">A long established fact that a who looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="amazen bg-white text-center border border-2 border-warning rounded-3 py-3 px-3 d-flex align-items-center flex-column justify-content-around" style="height: 100%;">
+                        <img src="images/trusted-img/img-3.png" alt="amazen-img-1" class="img-fluid mb-2 col-8">
+                        <div class="amazen-dis">
+                            <h3 class="text-primary">Los Books</h3>
+                            <p class="dis text-info-emphasis fs-5">A long established fact that a who looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="amazen bg-white text-center border border-2 border-warning rounded-3 py-3 px-3 d-flex align-items-center flex-column justify-content-evenly" style="height: 100%;">
+                        <img src="images/trusted-img/img-4.png" alt="amazen-img-1" class="img-fluid mb-2 col-6">
+                        <div class="amazen-dis">
+                            <h3 class="text-primary">Urban Lib</h3>
+                            <p class="dis text-info-emphasis fs-5">A long established fact that a who looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-trusted -->
+    <!-- free-chapter -->
+    <section class="free-chapter-contact" style="padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-part text-center bg-warning p-5 d-flex align-items-center justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="text-center mb-4">
+                                <h2 class="text-primary text-center">Articles & Resources</h2>
+                                <img src="images/line/Line-2.png" alt="line" class="img-fluid text-center d-inline-block rounded-5" style="width: 9%;">
+                            </div>
+                            <div class="free-chapter-dis">
+                                <p class="text-primary dis">Making this the first true value generator on the Internet. It of over 200 Latin words, combined with a handful.</p>
+                                <div class="input-btn d-flex align-items-center justify-content-center">
+                                    <input type="text" placeholder="Your Email id..." style="outline: none; border: none; width: 100%;" class="py-2 me-2 px-2 rounded-start-3">
+                                    <a href="#" class="btn btn-primary py-2 px-4 rounded-end-3 rounded-start-0" style="--bs-btn-bg: #1b3764; --bs-btn-active-bg: #1b3764; --bs-btn-hover-bg:#1b3764; border: none; ">Subscribe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-free-chapter -->
+    <!-- footer -->
+    <footer class="bg-primary" style="padding-top: 100px;">
+        <div class="container">
+            <div class="row row-gap-4 border-bottom pb-4">
+                <div class="col-lg-3">
+                    <div class="footer-logo-icon">
+                        <div class="logo mb-3">
+                            <a class="navbar-brand fs-3 fw-semibold text-white d-flex align-items-center" href="#"><img src="images/brand/Logo.png" alt="logo" class="img-fluid pe-2">Pages</a>
+                        </div>
+                        <div class="navbar-icon d-flex">
+                            <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 border border-1 border-warning text-white rounded-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 border border-1 border-warning text-white rounded-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2 me-2 border border-1 border-warning text-white rounded-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="text-decoration-none d-flex align-items-center fs-4 p-2  border border-1 border-warning text-white rounded-3"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-list-2">
+                        <h4 class="text-white">Explore</h4>
+                        <ul class="m-0 list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Home</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Services</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Appointments</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Blog</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-list-3">
+                        <h4 class="text-white">Utility Pages</h4>
+                        <ul class="m-0 list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Start here</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Style guide</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>404 not found</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Password protected</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Licenses</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none fw-semibold fs-6" style="color: #b4c7e7;" onpointerenter="this.setAttribute('style', 'color: #FFCA42; transition: all 0.4s')" onpointerleave="this.setAttribute('style', 'color: #b4c7e7; transition: all 0.4s')"><i class="fa-solid fa-ellipsis pe-2 text-warning"></i>Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-list-4">
+                        <h4 class="text-white">Utility Pages</h4>
+                        <ul class="m-0 list-unstyled">
+                            <li class="d-flex mb-2">
+                                <div class="address pe-2">
+                                    <h5 class="text-white d-inline-block ">Address&nbsp;:</h5>
+                                </div>
+                                <div class="add-dis">
+                                    <span class="text-secondary dis">24A Kingston St, Los Vegas NC 28202, USA.</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <div class="address pe-2">
+                                    <h5 class="text-white d-inline-block">Mail&nbsp;:</h5>
+                                </div>
+                                <div class="add-dis">
+                                    <span class="text-secondary dis">support@doctors.com</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <div class="address pe-2">
+                                    <h5 class="text-white d-inline-block">Phone&nbsp;:</h5>
+                                </div>
+                                <div class="add-dis">
+                                    <span class="text-secondary dis">(+22) 123 - 4567 - 900</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer text-center d-flex align-items-center justify-content-center" style="padding: 50px 0px 50px 0px;">
+                <p class="m-0 fs-5 text-white"><span class="text-secondary">Drafted by</span> Victorflow <span class="text-secondary">- Powered by</span> Webflow</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end-footer -->
+<!-- end main -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

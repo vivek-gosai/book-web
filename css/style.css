@@ -1,0 +1,28 @@
+:root{
+    --bs-primary-rgb: 27, 55, 100;
+    --bs-secondary-rgb: 180, 199, 231;
+    --bs-info-text-emphasis: #969AA0;
+    --bs-info-rgb: 244, 248, 255;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto';
+}
+.dis .nav-item{
+    font-family: 'Open Sans SemiCondensed';
+}
+.yellowtail{
+    font-family: 'Yellowtail';
+}
+.banner::-webkit-scrollbar {
+    width: 0px;
+}
+.py{
+    padding: 85px 0px;
+}
+.profile{
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--b-radius);
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
